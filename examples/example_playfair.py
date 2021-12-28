@@ -9,12 +9,12 @@ def ClearConsole():
 
 def Encryption():
     planeText = input('Plane text: ').upper().replace(' ', '')
-    key = input('Key number: ').upper().replace(' ', '')
+    key = input('Key: ').upper().replace(' ', '')
     print(playfair.Encrypt(planeText, key))
 
 def Decryption():
     cipher = input('Cipher text: ').upper().replace(' ', '')
-    key = input('Key number: ').upper().replace(' ', '')
+    key = input('Key: ').upper().replace(' ', '')
     print(playfair.Decrypt(cipher, key))
     
     
